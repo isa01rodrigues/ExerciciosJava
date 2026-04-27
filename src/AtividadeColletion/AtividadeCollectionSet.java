@@ -24,7 +24,7 @@ public class AtividadeCollectionSet {
             System.out.println("Digite um número inteiro: ");
             numero = leia.nextInt();
 
-            // Adiciona no Set
+			// se adicionar retorna true, se já existir retorna false
             if (numeros.add(numero)) {
                 System.out.println("Número adicionado!");
             } else {
@@ -32,7 +32,7 @@ public class AtividadeCollectionSet {
             }
         }
 
-        // Exibição com Iterator
+		// mostrando os números que ficaram no Set
         System.out.println("\nElementos do Set:");
 
         Iterator<Integer> iterator = numeros.iterator();
